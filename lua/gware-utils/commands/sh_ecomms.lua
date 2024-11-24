@@ -26,7 +26,7 @@ command:OnServerSide(function(ply, text)
 
     local args = text:Split("*")
 
-    local namePart = text:sub(1, text:find("*"))
+    local namePart = text:sub(1, text:find("*") -1)
     local message = args[2]
 
     if not message then
