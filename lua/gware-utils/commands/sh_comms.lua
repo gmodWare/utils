@@ -23,7 +23,7 @@ command:OnServerSide(function(ply, text)
         return ""
     end
 
-    local namePart = text:sub(1, text:find("*"))
+    local namePart = text:sub(1, text:find("*") -1)
     local message = args[2]:sub(2)
 
     if not message then
